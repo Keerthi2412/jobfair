@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <h2>Job Fair Admin</h2>
+        <ul>
+            <li><a href="#" class="menu active" data-section="dashboard">Dashboard</a></li>
+            <li><a href="#" class="menu" data-section="applicants">Applicants</a></li>
+            <li><a href="#" class="menu" data-section="reports">Reports</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+        <!-- DASHBOARD -->
+        <div id="dashboard" class="section active-section">
+            <h1>Dashboard Overview</h1>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Applicants</h3>
+                    <p id="totalApplicants">0</p>
+                </div>
+                <div class="card">
+                    <h3>Total Companies</h3>
+                    <p id="totalCompanies">10</p>
+                </div>
+                <div class="card">
+                    <h3>Total Selections</h3>
+                    <p id="totalSelections">0</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- APPLICANTS -->
+        <div id="applicants" class="section">
+            <h1>Manage Applicants</h1>
+
+            <input type="text" id="applicantName" placeholder="Enter applicant name">
+            <button id="addApplicantBtn" class="btn">Add Applicant</button>
+
+            <ul id="applicantList"></ul>
+        </div>
+
+        <!-- REPORTS -->
+        <div id="reports" class="section">
+            <h1>Reports</h1>
+            <button id="generateReportBtn" class="btn">Generate Report</button>
+            <p id="reportOutput"></p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
